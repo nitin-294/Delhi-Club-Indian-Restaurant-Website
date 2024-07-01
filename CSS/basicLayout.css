@@ -1,0 +1,49 @@
+:root{
+    --navAndFooterBackground: rgba(255, 255, 240, 0.815);
+    --backgroundColor: rgb(255, 204, 128);
+}
+
+header{
+    background-color: white;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+body{
+    background-color: var(--backgroundColor);
+}
+
+main {
+    background-image: url(../Images/OrangePattern.png);
+    background-color: var(--backgroundColor);
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: var(--navAndFooterBackground);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.footerSection{
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer h2{
+    text-align: center;
+}
