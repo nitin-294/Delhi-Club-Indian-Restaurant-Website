@@ -102,6 +102,13 @@ main {
     background-image: url(../Images/OrangePattern.png);
     background-color: var(--backgroundColor);
     border-radius: 0.625rem;
+    padding: 2rem;
+}
+
+.mainContent{
+    padding: 2rem;
+    border-radius: 0.625rem;
+    background-color: rgb(253, 233, 202);
 }
 
 
