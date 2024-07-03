@@ -1,7 +1,7 @@
 <?php
     include "../PHP/dbConnection.php";
 
-    $sql = "SELECT item_name, item_description, item_price FROM menuitems WHERE category_id = 1";
+    $sql = "SELECT item_name, item_description, item_price FROM menuitems WHERE category_id = 17";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

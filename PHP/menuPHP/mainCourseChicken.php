@@ -8,7 +8,7 @@
         while ($row = $result->fetch_assoc()) {
             echo '<div class="menuItem">';
             echo '<h3>' . htmlspecialchars($row["item_name"]) . '</h3>';
-            echo '<p>' . htmlspecialchars($row["item_description"]) . '</p>';
+            echo '<p class="itemDescription">' . htmlspecialchars($row["item_description"]) . '</p>';
             echo '<p>$' . htmlspecialchars($row["item_price"]) . '</p>';
             echo '</div>';
         }

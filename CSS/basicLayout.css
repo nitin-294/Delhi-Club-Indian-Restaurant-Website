@@ -5,6 +5,10 @@
 
 }
 
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /*Header*/
 header {
     background: radial-gradient(circle at center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 85%, rgb(255, 204, 128) 100%);
@@ -40,6 +44,10 @@ header {
 
 #selected {
     background-color: rgba(221, 218, 208, 0.4); 
+}
+
+#selected:hover {
+    color: black;
 }
 
 /* Dropdown Menu */
@@ -105,6 +113,10 @@ main {
     padding: 2rem;
 }
 
+.mainContent {
+    padding: 2rem;
+    border-radius: 0.625rem;
+}
 
 /*Footer*/
 .footer{
