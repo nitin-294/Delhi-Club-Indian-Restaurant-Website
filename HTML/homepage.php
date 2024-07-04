@@ -3,6 +3,7 @@
 <head>
     <title>Delhi Club Indian Restaurnt</title>
     <link rel="stylesheet" href="../CSS/basicLayout.css">
+    <link rel="stylesheet" href="../CSS/homepage.css">
 </head>
 
 <body>
@@ -13,7 +14,15 @@
 
 <main>
     <div class="mainContent">
-        <h1>Testing</h1>
+        <div class="welcomeMessage">  
+            <p></p>
+        </div>
+        <div class="onlineOrder">  
+        </div>
+        <div class="reservations">  
+        </div>
+        <div class="gallery">  
+        </div>
     </div>
 </main>
 

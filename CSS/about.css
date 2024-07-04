@@ -1,0 +1,34 @@
+.mainContent{
+    background: radial-gradient(circle at center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(255, 204, 128) 100%);
+}
+
+.mainContent p{
+    font-size: large;
+}
+
+#buttonAbout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+#buttonAbout button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    height: 3rem;
+    width: 13rem;
+    background-color: rgb(139, 19, 3);
+    color: white;
+}
+
+#buttonAbout button:hover{
+    background-color: rgba(139, 19, 3, 0.801);
+    transition: 0.5s;
+}
