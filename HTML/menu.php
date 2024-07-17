@@ -14,7 +14,7 @@
 
 <main>
     <div id="stickyNavbar">
-    <div class="arrow" id="arrowLeft">&lt;</div>
+    <div class="arrow" id="arrowLeft">❮</div>
     <div class="nav-content">
         <ul>
             <li><a href="#vegEntrees">Vegetarian Entrees</a></li>
@@ -38,7 +38,7 @@
             <li><a href="#indoRice">Indo-Chinese Rice</a></li>
         </ul>
     </div>
-    <div class="arrow" id="arrowRight">&gt;</div>
+    <div class="arrow" id="arrowRight">❯</div>
 </div>
 
     <div>

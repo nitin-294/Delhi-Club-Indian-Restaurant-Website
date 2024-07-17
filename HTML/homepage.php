@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Delhi Club Indian Restaurnt</title>
+    <title>Delhi Club Indian Restaurant</title>
     <link rel="stylesheet" href="../CSS/basicLayout.css">
     <link rel="stylesheet" href="../CSS/homepage.css">
 </head>
@@ -30,7 +30,12 @@
             </form>
         </div>
         <br>
-        <div class="slideShow" id="slideShow">
+        <div class="slideShowContainer">
+            <button id="prev" class="nav-button">❮</button>
+            <div class="slideShow" id="slideShow">
+                <img id="slideImage" style="width:100%;" src="../Images/Restaurant Photos/Pic1.jpg" />
+            </div>
+            <button id="next" class="nav-button">❯</button>
         </div>
     </div>
 </main>

@@ -17,21 +17,31 @@ document.addEventListener("DOMContentLoaded", function() {
         "../Images/Restaurant Photos/Pic15.jpg",
         "../Images/Restaurant Photos/Pic16.jpg",
         "../Images/Restaurant Photos/Pic17.jpg"
-
     ];
 
     let currentIndex = 0;
-    const slideShowContainer = document.getElementById("slideShow");
+    const imgElement = document.getElementById("slideImage");
 
-    const imgElement = document.createElement("img");
-    imgElement.src = images[currentIndex];
-    imgElement.style.width = "100%";
-    slideShowContainer.appendChild(imgElement);
-
-    function changeImage() {
-        currentIndex = (currentIndex + 1) % images.length;
+    function changeImage(index) {
+        imgElement.classList.remove("fade");
+        void imgElement.offsetWidth;
+        currentIndex = (index + images.length) % images.length;
         imgElement.src = images[currentIndex];
+        imgElement.classList.add("fade");
     }
 
-    setInterval(changeImage, 3000);
+    setInterval(function() {
+        changeImage(currentIndex + 1);
+    }, 3000);
+
+    const prevButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
+
+    prevButton.addEventListener("click", function() {
+        changeImage(currentIndex - 1);
+    });
+
+    nextButton.addEventListener("click", function() {
+        changeImage(currentIndex + 1);
+    });
 });

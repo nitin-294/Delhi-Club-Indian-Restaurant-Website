@@ -50,56 +50,6 @@ header {
     color: black;
 }
 
-/* Dropdown Menu */
-.navDropdown {
-    transition: 0.5s;
-    position: relative;
-    display: inline-block;
-}
-
-.navDropdown button.dropbutton {
-    text-decoration: none;
-    font-weight: bold;
-    padding: 1rem;
-    font-size: 1.5rem; 
-    color: rgb(190, 125, 3);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    border-radius: 0.5rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.navDropdown button.dropbutton:hover {
-    transition: 0.5s;
-    color: rgb(255, 255, 255);
-    background-color: rgb(216, 183, 123);
-}
-
-.dropdownContent {
-    display: none;
-    position: absolute;
-    background-color: var(--navAndFooterBackground);
-    min-width: 10rem;
-    box-shadow: 0px 0.5rem 1rem 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdownContent a {
-    color: rgb(190, 125, 3);
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdownContent a:hover {
-    background-color: rgb(216, 183, 123);
-}
-
-.navDropdown:hover .dropdownContent {
-    display: block;
-}
-
 
 /* Body */
 body {
