@@ -21,13 +21,13 @@
         <p>Beyond our delectable cuisine, we pride ourselves on providing an ambiance that complements your dining experience. Our beautifully designed interiors, inspired by the rich cultural heritage of India, create a cozy and elegant setting perfect for any occasion – from intimate dinners to festive celebrations.</p>
         <p>Join us at Delhi Club in Parkdale, Victoria, and let us transport you to the heart of India with every bite. Whether you're a long-time fan of Indian cuisine or a newcomer eager to explore, we welcome you with open arms and a promise of an unforgettable dining experience.</p>
         <div id="buttonAbout">
-        <form action="..\HTML\reservation.php" method="get">
-            <button type="submit">Make a Reservation</button>
-        </form>
-        <form action="..\HTML\menu.php" method="get">
-            <button type="submit">Order Online</button>
-        </form>
-    </div>
+            <form action="..\HTML\reservation.php" method="get">
+                <button type="submit">Make a Reservation</button>
+            </form>
+            <form action="..\HTML\menu.php" method="get">
+                <button type="submit">Order Online</button>
+            </form>
+        </div>
     </div>
 </main>
 
