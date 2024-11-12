@@ -1,0 +1,90 @@
+main {
+    text-align: center;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#logo {
+    background-color: white;
+    border-radius: 0.7rem;
+}
+
+#logo img {
+    width: 20rem;
+    height: auto;
+}
+
+.bookingForm {
+    background-color: rgba(224, 209, 186, 0.897);
+    padding: 3rem;
+    border-radius: 0.625rem;
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: auto;
+}
+
+.bookingForm h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: rgb(109, 16, 16);
+}
+
+.bookingForm .form-row {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.bookingForm label {
+    font-weight: bold;
+    color: #631a1a;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.bookingForm input[type="text"],
+.bookingForm input[type="email"],
+.bookingForm input[type="tel"],
+.bookingForm input[type="date"],
+.bookingForm input[type="time"],
+.bookingForm input[type="number"],
+.bookingForm textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    width: 100%; 
+    text-align: right;
+}
+
+.bookingForm textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.bookingForm .error-message {
+    grid-column: 2;
+    font-size: 1rem;
+    color: red;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.bookingForm button[type="submit"] {
+    background-color: rgb(119, 31, 28);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}

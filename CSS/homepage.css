@@ -1,0 +1,75 @@
+.mainContent {
+    background: radial-gradient(circle at center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(255, 204, 128) 100%);
+}
+
+#buttonAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+#buttonAbout button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    height: 3rem;
+    width: 13rem;
+    background-color: rgb(139, 19, 3);
+    color: white;
+}
+
+#buttonAbout button:hover {
+    background-color: rgba(139, 19, 3, 0.801);
+    transition: 0.5s;
+}
+
+.slideShowContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    height: auto;
+    background: linear-gradient(217deg, rgba(54, 54, 54, 0.5), rgba(255,0,0,0) 70.71%), linear-gradient(127deg, rgba(54, 54, 54, 0.5), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(54, 54, 54, 0.5), rgba(0,0,255,0) 70.71%);
+}
+
+.nav-button {
+    flex: 0.2;
+    color: rgb(7, 7, 7);
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    transition: 0.5s ease;
+}
+
+.slideShow {
+    flex: 0.6;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.712);
+}
+
+.slideShow img {
+    width: 100%;
+    height: auto;
+}
+
+.welcomeMessage {
+    font-size: 1.1rem;
+}

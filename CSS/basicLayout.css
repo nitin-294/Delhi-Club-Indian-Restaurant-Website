@@ -1,0 +1,150 @@
+:root{
+    --navAndFooterBackground: rgba(252, 244, 210, 0.788);
+    --footerSection: rgba(252, 248, 231, 0.788);
+    --backgroundColor: rgb(255, 204, 128);
+
+}
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Header*/
+header {
+    background: radial-gradient(circle at center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 85%, rgb(255, 204, 128) 100%);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: rgb(190, 125, 3);
+    border-radius: 0.5rem;
+}
+
+.navbar a:hover{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(216, 183, 123);
+}
+
+.navbar .cartLink img{
+    width: 2.5rem;
+    height: auto;
+    filter: brightness(0.8) sepia(1) hue-rotate(190deg);
+}
+
+#selected {
+    background-color: rgba(221, 218, 208, 0.4); 
+}
+
+#selected:hover {
+    color: black;
+}
+
+
+/* Body */
+body {
+    background-color: var(--backgroundColor);
+}
+
+main {
+    background-image: url(../Images/OrangePattern.png);
+    background-color: var(--backgroundColor);
+    border-radius: 0.625rem;
+    padding: 2rem;
+}
+
+.mainContent {
+    padding: 2rem;
+    border-radius: 0.625rem;
+}
+
+/*Footer*/
+.footer{
+    background-color: var(--navAndFooterBackground);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.footerSection{
+    list-style-type: none;
+    padding: 1rem;
+    flex: 1;
+    background-color: var(--footerSection);
+}
+
+.footer h2{
+    text-align: center;
+    color: rgb(141, 95, 9);
+}
+
+.footer iframe {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    width: 95%;
+    height: auto;
+}
+
+.footerSection li {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: rgb(190, 125, 3);
+}
+
+.footerSection li strong {
+    color: rgb(141, 95, 9);
+}
+
+.footerSection li a {
+    color: rgb(190, 125, 3);
+    text-decoration: none;
+}
+
+.footerSection li a:hover {
+    text-decoration: underline;
+}
+
+.footerSection table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.footerSection th, .footerSection td {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid rgba(114, 75, 1, 0.2);
+}
+
+.footerSection th {
+    background-color: rgb(177, 148, 96);
+    color: rgba(54, 27, 27, 0.685);
+}
+
+.footerSection td {
+    background-color: var(--navAndFooterBackground);
+    color: rgb(190, 125, 3);
+}
+
+.footerSection tr:nth-child(even) td {
+    background-color: rgba(252, 244, 210, 0.9);
+}
+
+.footerSection tr:hover td {
+    background-color: rgba(216, 183, 123, 0.5);
+}
+
+
