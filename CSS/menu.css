@@ -102,6 +102,13 @@
     border-radius: 0.25rem;
 }
 
+.itemDetails {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+
 .itemCategories h2{
     text-align: center;
     background-color: rgb(139, 19, 3);
@@ -119,22 +126,49 @@
 }
 
 .menuItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 0.5rem;
     border: 1px solid #000000;
     background-color: rgb(248, 242, 242);
     margin-bottom: 0.7rem;
-    width: 95%; 
     margin-left: 2.5%;
     font-weight: bold;
 }
 
-.menuItem h3, .menuItem p{
-    margin-left: 1rem;
+.menuItem h3{
+    margin: 1rem 0 1rem 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+    font-size: large;
+}
+
+.menuItem p{
+    margin: 0 0 1rem 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .itemDescription{
     color: grey;
     font-weight: lighter;
+    font-size: small;
+}
+
+.addToCartButton{
+    display: flex;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: none;
+}
+
+.addToCartButton:hover{
+    background-color: rgb(40, 175, 40);
+    color: white;
 }

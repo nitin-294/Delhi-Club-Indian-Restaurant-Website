@@ -7,9 +7,12 @@
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
             echo '<div class="menuItem">';
+            echo '<div class="itemDetails">';
             echo '<h3>' . htmlspecialchars($row["item_name"]) . '</h3>';
             echo '<p class="itemDescription">' . htmlspecialchars($row["item_description"]) . '</p>';
             echo '<p>$' . htmlspecialchars($row["item_price"]) . '</p>';
+            echo '</div>';
+            echo '<button class="addToCartButton">Add To Cart</button>';
             echo '</div>';
         }
         echo '</div>';

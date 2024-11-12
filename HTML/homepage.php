@@ -15,7 +15,7 @@
 <main>
     <div class="mainContent">
         <div class="welcomeMessage">  
-            <p><b>Welcome to Delhi Club Indian Restaurant! Testing123</b></p>
+            <p><b>Welcome to Delhi Club Indian Restaurant!</b></p>
             <p>Located in the heart of Parkdale, Victoria, Delhi Club is your gateway to the vibrant and diverse flavors of India. Since our founding in 2019, we have been committed to bringing you an authentic dining experience with a modern twist.</p>
             <p>Join us for a culinary journey that celebrates traditional Indian cuisine, made with the freshest ingredients and a passion for excellence. Whether you're here for a casual takeaway, a romantic dinner, or a family celebration, we promise to make your visit unforgettable.</p>
             <p>Experience the true essence of India at Delhi Club Indian Restaurant – where every meal is a celebration!</p>
