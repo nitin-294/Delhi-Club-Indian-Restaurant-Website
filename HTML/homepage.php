@@ -37,6 +37,7 @@
             </div>
             <button id="next" class="nav-button">❯</button>
         </div>
+        <br>
     </div>
 </main>
 

@@ -19,7 +19,8 @@
     <div class="mainContent">
         <div class="bookingForm">
             <h1>Reserve Table</h1>
-            <form action="..\HTML\reserve.php" method="post" onsubmit="return validateForm()">
+            <br>
+            <form action="../PHP/handlingReservation.php" method="post" onsubmit="return validateForm()">
                 <div class="form-row">
                     <label for="fullName">Full Name:</label>
                     <input type="text" id="fullName" name="fullName">

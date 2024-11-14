@@ -8,7 +8,7 @@ function validateForm() {
     var notes = document.getElementById("notes").value.trim();
 
     var isValid = true;
-    
+
     document.getElementById("fullNameError").innerHTML = "";
     document.getElementById("dateError").innerHTML = "";
     document.getElementById("emailError").innerHTML = "";
@@ -59,7 +59,7 @@ function validateForm() {
         document.getElementById("timeError").innerHTML = "Please select a time.";
         isValid = false;
     } else {
-        var selectedTime = new Date("2000-01-01T" + time + ":00"); 
+        var selectedTime = new Date("2000-01-01T" + time + ":00");
         var startTime = new Date("2000-01-01T17:00:00");
         var endTime = new Date("2000-01-01T21:30:00");
         if (selectedTime < startTime || selectedTime > endTime) {
@@ -71,11 +71,13 @@ function validateForm() {
     if (numPeople === "") {
         document.getElementById("numPeopleError").innerHTML = "Please enter the number of people.";
         isValid = false;
+    } else if (numPeople > 8) {
+        document.getElementById("numPeopleError").innerHTML = "We can only accommodate a maximum of 8 people per reservation.";
+        isValid = false;
     }
 
-    var today = new Date().toISOString().split('T')[0];
-    if (date < today) {
-        document.getElementById("dateError").innerHTML = "Please select a date in the future.";
+    if (notes.length > 200) {
+        document.getElementById("notesError").innerHTML = "Notes cannot exceed 200 characters.";
         isValid = false;
     }
 
