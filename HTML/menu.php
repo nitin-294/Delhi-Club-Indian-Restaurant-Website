@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Delhi Club Indian Restaurant</title>
+    <title>Delhi Club Indian Restaurant - Menu</title>
     <link rel="stylesheet" href="../CSS/basicLayout.css">
     <link rel="stylesheet" href="../CSS/menu.css">
 </head>
@@ -9,7 +9,7 @@
 <body>
 
 <header>
-    <script src="../JavaScript/header.js"></script>
+    <?php include '../PHP/header.php'; ?>
 </header>
 
 <main>

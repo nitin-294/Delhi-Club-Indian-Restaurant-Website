@@ -3,7 +3,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: rgba(139, 19, 3, 0.89);
+    background-color: rgba(139, 19, 3, 1);
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -150,6 +150,7 @@
 
 .itemDescription{
     color: grey;
+    font: italic;
     font-weight: lighter;
     font-size: small;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Delhi Club Indian Restaurant</title>
+    <title>Delhi Club Indian Restaurant - Homepage</title>
     <link rel="stylesheet" href="../CSS/basicLayout.css">
     <link rel="stylesheet" href="../CSS/homepage.css">
 </head>
@@ -9,7 +9,7 @@
 <body>
 
 <header>
-    <script src="../JavaScript/header.js"></script>
+    <?php include '../PHP/header.php'; ?>
 </header>
 
 <main>
@@ -33,9 +33,15 @@
         <div class="slideShowContainer">
             <button id="prev" class="nav-button">❮</button>
             <div class="slideShow" id="slideShow">
-                <img id="slideImage" style="width:100%;" src="../Images/Restaurant Photos/Pic1.jpg" />
+                <img id="slideImage" src="../Images/Restaurant Photos/Pic1.jpg" alt="Restaurant Image">
             </div>
             <button id="next" class="nav-button">❯</button>
+        </div>
+        <br>
+        <br>
+        <div class="reviewsContainer">
+            <div class="reviewWrapper">
+            </div>
         </div>
         <br>
     </div>
@@ -44,6 +50,7 @@
 <footer>
     <script src="../JavaScript/footer.js"></script>
     <script src="../JavaScript/slideShow.js"></script>
+    <script src="../JavaScript/reviewsSlideshow.js"></script>
 </footer>
 
 </body>

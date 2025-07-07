@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Delhi Club Indian Restaurnt</title>
+    <title>Delhi Club Indian Restaurant - About</title>
     <link rel="stylesheet" href="../CSS/basicLayout.css">
     <link rel="stylesheet" href="../CSS/about.css">
 </head>
 
 <body>
-
 <header>
-    <script src="../JavaScript/header.js"></script>
+    <?php include '../PHP/header.php'; ?>
 </header>
 
 <main>

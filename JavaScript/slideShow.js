@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setInterval(function() {
         changeImage(currentIndex + 1);
-    }, 3000);
+    }, 5000);
 
     const prevButton = document.getElementById("prev");
     const nextButton = document.getElementById("next");

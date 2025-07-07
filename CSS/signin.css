@@ -1,0 +1,142 @@
+.mainContent {
+    background: radial-gradient(circle at center, rgb(255 255 255) 0%, rgb(255 255 255) 95%, rgb(255 204 128) 100%);
+    opacity: 0.92;
+    padding: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+form h2 {
+    color: #8b1303;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Sign In and Sign Up container */
+.signin-container,
+.signup-container {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Label and Input */
+.input-group,
+.vertical-input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-group label,
+.vertical-input-group label {
+    white-space: nowrap;
+    font-weight: bold;
+    width: 8rem;
+    text-align: left;
+}
+
+.input-group input,
+.vertical-input-group input {
+    flex: 1;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+}
+
+/* Error and Success messages */
+.errorMessage {
+    color: red;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: right;
+}
+
+.successMessage {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Forgot password */
+.forgot-link {
+    width: 100%;
+    text-align: right;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.forgot-link a {
+    font-size: 0.85rem;
+    color: #8b1303;
+    text-decoration: none;
+}
+
+.forgot-link a:hover {
+    text-decoration: underline;
+}
+
+/* Captcha */
+#captchaText {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #eee;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.4rem;
+    width: 100%;
+}
+
+/* Submit buttons */
+button[type="submit"],
+button.btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: rgb(139, 19, 3);
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover,
+button.btn:hover {
+    background-color: rgba(139, 19, 3, 0.85);
+    transition: background-color 0.3s;
+}
+
+/* Links below forms */
+.signup-link,
+.signup-container span {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+}
+
+.signup-link a,
+.signup-container span a {
+    color: #8b1303;
+    text-decoration: none;
+}
+
+.signup-link a:hover,
+.signup-container span a:hover {
+    text-decoration: underline;
+}
+

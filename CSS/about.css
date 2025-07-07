@@ -1,5 +1,6 @@
 .mainContent{
-    background: radial-gradient(circle at center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 90%, rgb(255, 204, 128) 100%);
+    background: radial-gradient(circle at center, rgb(255 255 255) 0%, rgb(255 255 255) 95%, rgb(255 204 128) 100%);
+    opacity: 0.92;
 }
 
 .mainContent p{

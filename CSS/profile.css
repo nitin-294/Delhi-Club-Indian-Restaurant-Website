@@ -1,0 +1,54 @@
+.mainContent {
+    background: radial-gradient(circle at center, rgb(255 255 255) 0%, rgb(255 255 255) 95%, rgb(255 204 128) 100%);
+    opacity: 0.92;
+    padding: 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+/* Submit buttons */
+button[type="submit"],
+button.btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: rgb(139, 19, 3);
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover,
+button.btn:hover {
+    background-color: rgba(139, 19, 3, 0.85);
+    transition: background-color 0.3s;
+}
