@@ -18,7 +18,7 @@ form h2 {
 /* Sign In and Sign Up container */
 .signin-container,
 .signup-container {
-    max-width: 700px;
+    max-width: 43rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@ form h2 {
     flex: 1;
     padding: 0.6rem;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 0.0625rem solid #ccc;
     border-radius: 0.4rem;
     box-sizing: border-box;
 }

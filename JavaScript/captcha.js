@@ -7,13 +7,13 @@ captchaTextElement.textContent = captchaText;
 captchaTextElement.style.display = 'flex';
 captchaTextElement.style.alignItems = 'center';
 captchaTextElement.style.justifyContent = 'center';
-captchaTextElement.style.border = '1px solid #ccc';
-captchaTextElement.style.padding = '10px';
-captchaTextElement.style.marginBottom = '20px';
-captchaTextElement.style.fontSize = '24px';
+captchaTextElement.style.border = '0.0625rem solid #ccc';
+captchaTextElement.style.padding = '0.625rem';
+captchaTextElement.style.marginBottom = '1.25rem';
+captchaTextElement.style.fontSize = '1.5rem';
 captchaTextElement.style.backgroundColor = '#f5f5f5';
 captchaTextElement.style.color = '#333';
-captchaTextElement.style.letterSpacing = '2px';
+captchaTextElement.style.letterSpacing = '0.125rem';
 captchaTextElement.style.fontFamily = 'Arial, sans-serif';
 
 function generateCaptcha() {

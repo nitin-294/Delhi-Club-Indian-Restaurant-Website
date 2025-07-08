@@ -40,7 +40,11 @@ header {
 .navbar .cartLink img{
     width: 1rem;
     height: auto;
-    filter: brightness(0.8) sepia(1) hue-rotate(190deg);
+}
+
+.cartLink:hover img{
+    transition: 0.5s;
+    filter: brightness(0) invert(1);
 }
 
 #selected {
@@ -49,6 +53,11 @@ header {
 
 #selected:hover {
     color: black;
+}
+
+#selected:hover img {
+    transition: 0.5s;
+    filter: brightness(0) sepia(1);
 }
 
 .cart-count-badge {
@@ -141,7 +150,7 @@ main {
 
 .footerSection th, .footerSection td {
     padding: 0.25rem 0.5rem;
-    border: 1px solid rgba(114, 75, 1, 0.2);
+    border: 0.0625rem solid rgba(114, 75, 1, 0.2);
 }
 
 .footerSection th {

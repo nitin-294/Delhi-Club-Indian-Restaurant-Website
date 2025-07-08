@@ -23,7 +23,7 @@ main {
     background-color: rgba(224, 209, 186, 0.897);
     padding: 3rem;
     border-radius: 0.625rem;
-    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
     width: 80%;
     margin: auto;
 }
@@ -71,7 +71,7 @@ main {
 .bookingForm input[type="number"],
 .bookingForm textarea {
     padding: 0.75rem;
-    border: 1px solid #ccc;
+    border: 0.0625rem solid #ccc;
     border-radius: 0.5rem;
     font-size: 1rem;
     width: 95%; 
@@ -80,7 +80,7 @@ main {
 
 .bookingForm textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 6.25rem;
 }
 
 .bookingForm .error-message {
@@ -95,7 +95,7 @@ main {
     background-color: rgba(224, 209, 186, 0.897);
     padding: 3rem;
     border-radius: 0.625rem;
-    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
     margin: auto;
     max-width: 90%;
 }
