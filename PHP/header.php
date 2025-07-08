@@ -21,9 +21,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     ?>
 
     <a href="shoppingCart.php" class="cartLink" <?= $currentPage === 'shoppingCart.php' ? 'id="selected"' : '' ?>>
-    Cart 
-    <img src="../Images/shoppingCartIcon.png" alt="shopping cart">
-    <span id="cartCount" class="cart-count-badge"><?= $_SESSION['cart_count'] ?? 0 ?></span>
+        Cart 
+        <img src="../Images/shoppingCartIcon.png" alt="shopping cart">
+        <span id="cartCount" class="cart-count-badge"><?= $cartCount ?></span>
     </a>
 
 

@@ -1,37 +1,115 @@
 .mainContent {
-    background: radial-gradient(circle at center, rgb(255 255 255) 0%, rgb(255 255 255) 95%, rgb(255 204 128) 100%);
-    opacity: 0.92;
+    max-width: 56.25rem;
+    margin: 2rem auto;
     padding: 2rem;
-    max-width: 75rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border-radius: 1rem;
+    background-color: #fff8f4;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
 }
 
-/* Cart table styles */
 .cartTable {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
 }
 
-.cartTable th, .cartTable td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
+.cartTable th,
+.cartTable td {
+    padding: 0.875rem 1.125rem;
+    text-align: left;
+    border-bottom: 0.0625rem solid #e0e0e0;
 }
 
 .cartTable th {
+    background-color: #8b1303;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.cartTable tr:last-child td {
+    border-bottom: none;
+}
+
+.totalRow td {
+    font-weight: bold;
     background-color: #f2f2f2;
 }
 
+.quantityForm button {
+    background-color: #bb3412;
+    color: white;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    user-select: none;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0 0.25rem;
+    min-width: 2rem;
+    text-align: center;
+}
+
+.quantityForm button:hover {
+    background-color: #942003;
+}
+
+.quantityForm input[type="text"] {
+    width: 1.875rem;
+    text-align: center;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    pointer-events: none;
+    padding: 0.25rem 0.375rem;
+    margin: 0 0.125rem;
+}
+
+.removeBtn {
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.removeBtn:hover {
+    background-color: #b71c1c;
+}
+
 .cartEmpty {
-    margin-top: 20px;
-    font-size: 18px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
     color: #555;
 }
 
-.totalRow {
+.cartActions {
+    text-align: right;
+    margin-top: 1.5rem;
+}
+
+.checkoutBtn {
+    background-color: #388e3c;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
     font-weight: bold;
-    background-color: #fafafa;
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s ease;
+}
+
+.checkoutBtn:hover {
+    background-color: #2e7d32;
 }
