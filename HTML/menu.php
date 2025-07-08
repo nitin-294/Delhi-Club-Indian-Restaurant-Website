@@ -200,6 +200,7 @@
 
 <footer>
     <script src="../JavaScript/footer.js"></script>
+    <script src="../JavaScript/addingItem.js"></script>
 </footer>
 
 </body>
