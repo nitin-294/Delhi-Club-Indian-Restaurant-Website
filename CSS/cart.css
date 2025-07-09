@@ -54,6 +54,7 @@
     margin: 0 0.25rem;
     min-width: 2rem;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .quantityForm button:hover {
@@ -81,6 +82,7 @@
     border-radius: 0.25rem;
     cursor: pointer;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .removeBtn:hover {
@@ -97,6 +99,86 @@
 .cartActions {
     text-align: right;
     margin-top: 1.5rem;
+}
+
+#promoForm {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+#promoForm label {
+    font-weight: bold;
+    color: #8b1303;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+#promoCode {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    width: 12rem;
+    transition: border-color 0.3s ease;
+}
+
+#promoCode:focus {
+    outline: none;
+    border-color: #bb3412;
+    box-shadow: 0 0 5px #bb3412;
+}
+
+#promoForm button {
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#promoMessage {
+    color: green;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    min-height: 1.2rem;
+    white-space: nowrap;
+}
+
+#applyPromoBtn {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#applyPromoBtn:hover {
+    background-color: #2e7d32;
+}
+
+#removePromoBtn {
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+#removePromoBtn:hover {
+    background-color: #b71c1c;
 }
 
 .checkoutBtn {
