@@ -77,6 +77,7 @@ $cart = $_SESSION['cart'] ?? [];
 
 
 <footer>
+    <script src="../JavaScript/cart.js"></script>
     <script src="../JavaScript/footer.js"></script>
 </footer>
 
