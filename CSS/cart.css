@@ -195,3 +195,121 @@
 .checkoutBtn:hover {
     background-color: #2e7d32;
 }
+
+form > h3 {
+    margin-top: 2rem;
+    color: #8b1303;
+    font-weight: bold;
+    border-bottom: 2px solid #8b1303;
+    padding-bottom: 0.25rem;
+}
+
+.formRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.formRow .formGroup {
+    flex: 1;
+    min-width: 200px;
+}
+
+#addressSection {
+    margin-top: 1rem;
+    max-width: 100%;
+    position: relative;
+}
+
+#streetAddress {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+#addressValidation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 0.25rem 0;
+}
+
+#addressValidation button {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#addressValidation button:hover {
+    background-color: #f2f2f2;
+}
+
+#paymentSection {
+    margin-top: 1rem;
+}
+
+.radioPillGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.radioPillGroup input[type="radio"] {
+    display: none;
+}
+
+.radioPillGroup label {
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #8b1303;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8b1303;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.radioPillGroup label:hover {
+    background-color: #fff0ec;
+    border-color: #bb3412;
+    color: #bb3412;
+}
+
+.radioPillGroup input[type="radio"]:checked + label {
+    background-color: #8b1303;
+    color: white;
+    border-color: #8b1303;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-family: inherit;
+}
+
+
