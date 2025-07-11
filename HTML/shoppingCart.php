@@ -82,7 +82,6 @@ $finalTotal = $promo['final'] ?? $subtotal;
                 <?php endif; ?>
             </table>
 
-            <!-- Promo code form -->
             <form id="promoForm">
                 <label for="promoCode">Have a promo code?</label>
                 <input type="text" id="promoCode" name="promoCode" autocomplete="off" placeholder="Enter promo code">
