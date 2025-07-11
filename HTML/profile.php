@@ -15,6 +15,15 @@ $stmt->execute();
 $result = $stmt->get_result();
 $user = $result->fetch_assoc();
 
+$orders = [];
+if ($user && !empty($user['email'])) {
+    $stmtOrders = $conn->prepare("SELECT * FROM orders WHERE email = ? ORDER BY created_at DESC");
+    $stmtOrders->bind_param('s', $user['email']);
+    $stmtOrders->execute();
+    $orders = $stmtOrders->get_result()->fetch_all(MYSQLI_ASSOC);
+    $stmtOrders->close();
+}
+
 $updateMessage = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -51,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (empty($updateMessage)) {
             if ($stmt->execute()) {
                 $updateMessage = "Profile updated successfully!";
-                
+
                 $user['first_name'] = $firstName;
                 $user['last_name'] = $lastName;
                 $user['email'] = $email;
@@ -63,6 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,6 +87,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <main>
     <div class="mainContent signin-container">
+
+        <h2>Your Past Orders</h2>
+        <?php if (empty($orders)): ?>
+            <p>You have no past orders.</p>
+        <?php else: ?>
+            <?php foreach ($orders as $order): ?>
+                <div class="orderCard" style="border:1px solid #ccc; padding:1rem; margin-bottom:1rem;">
+                    <strong>Order #<?= $order['id'] ?></strong> - <?= date('d M Y, h:i A', strtotime($order['created_at'])) ?><br>
+                    Delivery: <?= htmlspecialchars($order['delivery_method']) ?> | Payment: <?= htmlspecialchars($order['payment_method']) ?><br>
+                    Subtotal: $<?= number_format($order['subtotal'], 2) ?> | Discount: $<?= number_format($order['discount'], 2) ?> | Total: $<?= number_format($order['final_total'], 2) ?><br>
+                    Address: <?= htmlspecialchars($order['address'] ?? 'N/A') ?>
+                    <br><br>
+                    <details>
+                        <summary>View Items</summary>
+                        <table style="width:100%; border-collapse: collapse;" border="1">
+                            <thead>
+                                <tr>
+                                    <th>Item</th><th>Quantity</th><th>Price</th><th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $stmtItems = $conn->prepare("SELECT * FROM order_items WHERE order_id = ?");
+                                $stmtItems->bind_param('i', $order['id']);
+                                $stmtItems->execute();
+                                $items = $stmtItems->get_result()->fetch_all(MYSQLI_ASSOC);
+                                $stmtItems->close();
+
+                                foreach ($items as $item):
+                                ?>
+                                    <tr>
+                                        <td><?= htmlspecialchars($item['item_name']) ?></td>
+                                        <td><?= (int)$item['quantity'] ?></td>
+                                        <td>$<?= number_format($item['price'], 2) ?></td>
+                                        <td>$<?= number_format($item['price'] * $item['quantity'], 2) ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </details>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
+
+
         <h2>Profile Details:</h2>
         <form action="profile.php" method="post">
             <label>First Name:</label>
@@ -105,7 +160,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label>New Password:</label>
             <input type="password" name="new_password" placeholder="Leave blank to keep current password">
 
-             <?php if ($updateMessage && strpos($updateMessage, 'Email or username') === false): ?>
+            <?php if ($updateMessage && strpos($updateMessage, 'Email or username') === false): ?>
                 <div style="color: <?= str_contains($updateMessage, 'successfully') ? 'green' : 'red' ?>; margin-top: 1rem;">
                     <?= htmlspecialchars($updateMessage) ?>
                 </div>
